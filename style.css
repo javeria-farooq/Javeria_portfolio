@@ -1,0 +1,288 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+i:hover{
+    background: linear-gradient(#fff, #3877ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body{
+    color: black;
+    background-color: white;
+}
+
+.myCards{
+    background-color: #444242;
+    box-shadow: 10px 10px 10px #262525;
+    color: white;
+    border-radius: 5px;
+}
+
+#homePg{
+    background-color: #262525;
+    color: white;
+    padding-bottom: 80px;
+}
+
+#navbar{
+    list-style: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+#navbar>li>a.homePg::after{
+    content: "";
+    display: block;
+    background-color: #fff;
+    margin-top: 8px;
+    width: 100%;
+    height: .5px;
+}
+
+#navbar>li>a:hover::after{
+    content: "";
+    display: block;
+    background-color: #fff;
+    margin-top: 8px;
+    width: 100%;
+    height: .5px;
+}
+
+#navbar>li{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+#socialCntct{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#socialCntct>li{
+    margin: 0px;
+    padding: 0px;
+}
+
+#socialCntct>li>a{
+    color: #bbb;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#socialCntct>li>a:hover{
+    background: linear-gradient(#fff, #3877ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#hireBtn{
+    background-color: #5db9ee;
+    border: 2px solid #5db9ee;
+    color: #262525;
+}
+
+#projectBtn{
+    border: 2px solid #5db9ee;
+    color: #5db9ee;
+    background-color: transparent;
+}
+
+.largeHeading{
+    color: #5db9ee;
+}
+
+.portBtn{
+    width: 130px;
+    height: 48px;
+    font-size: 20px;
+    font-weight: 20px;
+    border-radius: 6px;
+    transition: .5s ease;
+}
+
+#hireBtn:hover{
+    background-color: transparent;
+    color: #5db9ee;
+}
+
+#projectBtn:hover{
+   background-color: #5db9ee;
+   color: #262525;
+}
+
+#profileDp{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#author{
+    color: #5db9ee;
+}
+
+#resume{
+    color: white;
+    background-color: #262525;
+}
+
+#viewProject{
+    text-align: center;
+}
+
+#viewResume{
+    text-align: center;
+}
+
+.portionHeading{
+    font-size: 45px;
+    text-align: center;
+    color: #5db9ee;
+}
+
+.img{
+    width: 250px;
+    height: 180px;
+}
+
+.img>img{
+    width: 100%;
+    height: 100%;
+}
+
+#resume a{
+    color: white;
+    text-decoration: none;
+}
+
+.linkSocialAccounts{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.linkSocialAccounts li{
+    margin: 0px;
+    padding: 0px;
+    /* display: inline-block; */
+}
+
+.contactInfo{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.contactInfoFooter a{
+    color: white;
+    padding: 10px;
+    font-size: x-large;
+}
+
+.contactInfoFooter{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#employeeName{
+    text-align: center;
+    color: #5db9ee;
+    font-size: 35px;
+}
+
+#resume{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.resumeHeading{
+    color: #5db9ee;
+}
+
+.projectLink{
+    font-weight: bold;
+}
+
+.skills{
+    font-weight: bold;
+}
+
+.aboutMe{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.footer{
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 5px;
+}
+
+.contactInfoFooter{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.footerContent{
+    font-size: large;
+}
+
+@media(max-width: 576px) {
+    #viewResume{
+        font-size: 35px;
+    }
+
+    #employeeName{
+        font-size: 30px;
+    }
+
+    .aboutMe{
+        font-weight: normal;
+    }
+
+    .skills{
+        font-weight: normal;
+    }
+
+    .linkSocialAccounts{
+        font-weight: normal;
+    }
+
+    .footerContent{
+        text-align: center;
+    }
+}
+
+.footerContent{
+    text-align: center;
+}
+
+#downResume{
+    text-decoration: none;
+    text-align: center;
+    color: #5db9ee;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+}
