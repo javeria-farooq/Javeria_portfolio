@@ -16,10 +16,25 @@ body{
 }
 
 .myCards{
-    background-color: #444242;
+    background-color: rgb(68, 66, 66);
     box-shadow: 10px 10px 10px #262525;
     color: white;
     border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.card-title{
+    font-style: italic;
+}
+
+.card{
+    margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 #homePg{
@@ -28,21 +43,24 @@ body{
     padding-bottom: 80px;
 }
 
-#navbar{
+#ulNavbar{
     list-style: none;
     display: block;
     margin: 0px;
     padding: 0px;
     position: sticky;
     top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-#navbar>li>a{
+#ulNavbar>li>a{
     text-decoration: none;
     color: white;
 }
 
-#navbar>li>a.homePg::after{
+#ulNavbar>li>a.homePg::after{
     content: "";
     display: block;
     background-color: #fff;
@@ -51,7 +69,7 @@ body{
     height: .5px;
 }
 
-#navbar>li>a:hover::after{
+#ulNavbar>li>a:hover::after{
     content: "";
     display: block;
     background-color: #fff;
@@ -60,7 +78,7 @@ body{
     height: .5px;
 }
 
-#navbar>li{
+#ulNavbar>li{
     display: inline-block;
     margin: 0px;
     padding: 0px;
@@ -271,6 +289,13 @@ body{
 
     .footerContent{
         text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .myCards, .card{
+        width: 250px;
+        margin: 0px;
     }
 }
 
